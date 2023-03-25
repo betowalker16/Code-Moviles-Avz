@@ -1,0 +1,20 @@
+{
+  "name": "tareas",
+  "version": "0.1.0",
+  "description": "aplicacion de seguimiento de tareas (to-do)",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "author": "roberto ramirez rios",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^8.0.0",
+    "uuid": "^9.0.0"
+  }
+}

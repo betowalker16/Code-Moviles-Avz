@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JS</title>
+    <link rel="stylesheet" href="practica.css">
+</head>
+<body>
+    <div class="generador_p">
+        <h1 style="text-align: center;"> Generador aleatorio de passwords </h1>
+        <input type="text" id="password" class="password" value="" readonly>
+        <br>
+        <button class="boton_p" type="button" onclick="randomPassword()">Generar contraseña aleatoria</button>
+    </div>
+    <hr>
+    <div class="c_temperatura">
+        <h1 style="text-align: center;"> Conversor de temperatura </h1>
+        <select id="temperaturas">
+            <option value="">Selecciona la temperatura </option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br>
+        <input type="number" id="grados" class="grados" placeholder="Escribe los grados...">
+        <br>
+        <button class="boton_t" type="button" onclick="temperaturas(grados)">Convertir</button>
+    
+        <div class="resultados">
+            <h3 id="titulo1"></h3>
+            <h3 id="titulo2"></h3>
+            <input type="number" class="resultado" id="resultado1" value=0 readonly>
+            <input type="number" class="resultado" id="resultado2" value=0 readonly>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="calculadora_imc">
+        <h1 style="text-align: center;"> Calculadora de IMC </h1>
+
+        <div class="resultados_i">
+            <h3>Ingresa tu peso (kg)</h3>
+            <h3>Ingresa tu estatura (m)</h3>
+            <input type="number" id="peso" class="campo" placeholder="Ej. 85">
+            <input type="number" id="estatura" class="campo" placeholder="Ej. 1.74">
+        </div>
+        <br>
+        <button class="boton_t" type="button" onclick="calcularIMC(peso,estatura)">Calcular</button>
+        <h3 id="imc"></h3>
+        <input type="number" class="resultado" id="imc_r" value=0 readonly>
+
+    </div>
+    <hr>
+    <div class="colorPicker">
+        <h1 style="text-align: center;">Color picker</h1>
+        <div class="resultados_c">
+            <h3 class="titulo_rgb">R</h3>
+            <h3 class="titulo_rgb">G</h3>
+            <h3 class="titulo_rgb">B</h3>
+            <input type="number" id="r" class="campo_c" placeholder="Ej. 123">
+            <input type="number" id="g" class="campo_c" placeholder="Ej. 123">
+            <input type="number" id="b" class="campo_c" placeholder="Ej. 123">
+        </div>
+        <button class="boton_t" type="button" onclick="colorPicker(r,g,b)">ColorPicker</button>
+
+        <div id="color" class="color"></div>
+    </div>
+    <script src="practica.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* GENERADOR ALEATORIO DE PASSWORD  */
+.generador_p {
+    margin: 0 auto;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.password {
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: .5rem 1rem;
+    font-weight: 1000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:xx-large;
+    width: 15rem;
+}
+
+.boton_p {
+    margin-top: 2rem;
+    background-color: #00b4d8;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: white;
+    padding: .7rem 1.7rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 1000;
+    font-size: large;
+
+}
+
+.boton_p:hover {
+    cursor: pointer;
+    background-color: #5bdaf3;
+}
+
+/* CONVERSOR DE TEMPERATURA */
+
+.c_temperatura {
+    margin: 0 auto;
+    margin: 2rem 0rem;
+    text-align: center;
+}
+
+#temperaturas {
+    border: none;
+    padding: .5rem 1rem;
+    background-color: black;
+    color: white;
+    font-weight:900;
+    font-size:medium;
+}
+#temperaturas:hover {
+    cursor: pointer;
+}
+.grados { 
+    margin: 2rem 0rem;
+    max-width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.boton_t {
+    background-color: #ffb703;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: white;
+    padding: .7rem 1.7rem;
+    border: none;
+    margin: 1rem 0rem;
+    border-radius: 2rem;
+    font-weight: 1000;
+    font-size: large;
+}
+
+.boton_t:hover {
+    cursor: pointer;
+    background-color: #fca311;
+}
+
+.resultados {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 50%;
+}
+.resultado {
+    margin: 0rem 1rem;
+    text-align: center;
+    border: none;
+    font-size: 1.4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+/* CALCULADORA DE IMC */
+
+.calculadora_imc {
+    margin: 0 auto;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+.resultados_i{
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 40%;
+}
+
+.campo {
+    margin: 0rem 1rem;
+    text-align: center;
+    border: none;
+    font-size: 1.4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+/* COLOR PICKER */
+
+.colorPicker {
+    margin: 0 auto;
+    text-align: center;
+}
+.resultados_c{
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 60%;
+    column-gap: 1rem;
+}
+
+.titulo_rgb {
+    text-align: center;
+}
+
+.campo_c {
+    margin: 1rem 1rem;
+    text-align: center;
+    border: none;
+    font-size: 1.4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.color {
+    max-width: 20%;
+    margin: 0 auto;
+    height: 7rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}

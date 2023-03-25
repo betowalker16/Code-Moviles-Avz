@@ -1,0 +1,42 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>CALCULADORA SIMPLE EN JAVASCRIPT</h2>
+    <div class="calculadora">
+        <input type="text" class="displayCat" id="display" value="0">
+        <button class="boton" onclick="clearDisplay()">C</button>
+        <br>
+        <button class="boton" type="button" onclick="btnNumero('7')">7</button>
+        <button class="boton" type="button" onclick="btnNumero('8')">8</button>
+        <button class="boton" type="button" onclick="btnNumero('9')">9</button>
+        <button class="boton" type="button" onclick="btnOpera('/')">/</button>
+
+        <br>
+        <button class="boton" type="button" onclick="btnNumero('4')">4</button>
+        <button class="boton" type="button" onclick="btnNumero('5')">5</button>
+        <button class="boton" type="button" onclick="btnNumero('6')">6</button>
+        <button class="boton" type="button" onclick="btnOpera('*')">*</button>
+
+        <br>
+        <button class="boton" type="button" onclick="btnNumero('1')">1</button>
+        <button class="boton" type="button" onclick="btnNumero('2')">2</button>
+        <button class="boton" type="button" onclick="btnNumero('3')">3</button>
+        <button class="boton" type="button" onclick="btnOpera('-')">-</button>
+
+        <br>
+        <button class="boton" type="button" onclick="btnNumero('0')">0</button>
+        <button class="boton" type="button" onclick="btnOpera('+')">+</button>
+        <button class="boton" type="button" onclick="btnPunto()">.</button>
+        <button class="boton" type="button" onclick="btnIgual()">=</button>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
