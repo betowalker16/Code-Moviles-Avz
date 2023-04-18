@@ -1,4 +1,6 @@
 const axios = require('axios');
+const fs = require('fs')
+const filePath = './DB/data.json'
 
 class Busquedas {
     historial = [];
@@ -52,11 +54,16 @@ class Busquedas {
         this.historial.unshift(lugar)
     }
 
-    guardaBase = () => {
-        
+    guardaBase = (lugar) => {
+        fs.writeFileSync(filePath,JSON.stringify(lugar))
     }
-    restauraBase = () => {
 
+    restauraBase = () => {
+        if(!fs.existsSync(filePath))
+                return null;
+
+        const lugares = fs.readFileSync(filePath, {encoding: 'utf-8'})
+        return JSON.parse(lugares)
     }
 
 }
