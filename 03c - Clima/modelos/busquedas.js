@@ -1,12 +1,11 @@
-const axios = require('axios');
 const fs = require('fs')
-const filePath = './DB/data.json'
-
+const axios = require('axios')
 class Busquedas {
-    historial = [];
+    historial = []
+    filePath = './DB/data.json'
+
 
     constructor() {
-
     }
 
     async ciudad( lugar = '') {
@@ -54,16 +53,18 @@ class Busquedas {
         this.historial.unshift(lugar)
     }
 
-    guardaBase = (lugar) => {
-        fs.writeFileSync(filePath,JSON.stringify(lugar))
+    guardaBase = () => {
+        const baseDatos = {
+            'historial': this.historial
+        }
+        try {
+            fs.writeFileSync(this.filePath,JSON.stringify(baseDatos))
+        } catch (error) {
+            throw error
+        }
     }
 
     restauraBase = () => {
-        if(!fs.existsSync(filePath))
-                return null;
-
-        const lugares = fs.readFileSync(filePath, {encoding: 'utf-8'})
-        return JSON.parse(lugares)
     }
 
 }

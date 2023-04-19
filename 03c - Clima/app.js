@@ -6,7 +6,7 @@ const Busquedas = require('./modelos/busquedas');
 
 const main = async() => {
     let resp;
-    const busquedas = new Busquedas();
+    const busquedas = new Busquedas()
     do {
         resp = await inquirerMenu();
         switch (resp) {
@@ -20,10 +20,10 @@ const main = async() => {
 
             console.log(`\n${'Ciudad: '.yellow}: ${lugarSeleccionado.lugar}`);
             console.log(`${'Latitud: '.yellow}: ${lugarSeleccionado.lat}`);
-            console.log(`${'Longituf: '.yellow}: ${lugarSeleccionado.lon}`);
+            console.log(`${'Longitud: '.yellow}: ${lugarSeleccionado.lon}`);
             console.log(`${'Clima: '.yellow}: ${clima.desc}`);
             console.log(`${'Temperatura: '.yellow}: ${clima.real}`);
-            console.log(`${'Huemedad: '.yellow}: ${clima.hum}`);
+            console.log(`${'Humedad: '.yellow}: ${clima.hum}`);
 
             
             await pausa();
@@ -41,6 +41,8 @@ const main = async() => {
         }
         if(resp === 0)
             await pausa();
+
+        busquedas.guardaBase()
     } while (resp != 0);
 };
 
