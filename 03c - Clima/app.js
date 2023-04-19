@@ -7,6 +7,7 @@ const Busquedas = require('./modelos/busquedas');
 const main = async() => {
     let resp;
     const busquedas = new Busquedas()
+    busquedas.restauraBase()
     do {
         resp = await inquirerMenu();
         switch (resp) {
@@ -43,7 +44,7 @@ const main = async() => {
             await pausa();
 
         busquedas.guardaBase()
-    } while (resp != 0);
+    } while (resp != 0);
 };
 
 main();

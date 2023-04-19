@@ -51,6 +51,7 @@ class Busquedas {
             return
         }
         this.historial.unshift(lugar)
+        this.historial = this.historial.slice(0,5)
     }
 
     guardaBase = () => {
@@ -65,6 +66,13 @@ class Busquedas {
     }
 
     restauraBase = () => {
+        if (!fs.existsSync(this.filePath)) {
+            return null
+        }
+        const consulta = fs.readFileSync(this.filePath,{encoding: 'utf-8'})
+        const hist = JSON.parse(consulta)
+
+        this.historial = hist.historial
     }
 
 }
