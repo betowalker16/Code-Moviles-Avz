@@ -5,6 +5,14 @@ class persona {
         this.nombre = nombre
         this.edad = edad
     }
+
+    getNombre() : string {
+        return this.nombre
+    }
+
+    setNombre(nombre : string): void {
+        this.nombre = nombre
+    }
 }
 
 var Roberto = new persona('Roberto',22)
