@@ -1,4 +1,4 @@
-class persona {
+class persona1 {
     nombre: string
     edad: number
     public constructor(nombre: string,edad: number) {

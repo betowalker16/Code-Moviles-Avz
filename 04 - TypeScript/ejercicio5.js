@@ -1,5 +1,5 @@
 "use strict";
-class persona {
+class persona1 {
     constructor(nombre, edad) {
         this.nombre = nombre;
         this.edad = edad;
