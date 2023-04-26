@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <title>Angular JS</title>
+</head>
+<body ng-app="">
+    <h3>Filtro order by</h3>
+    <div ng-init="resultados = [ {nombre: 'Juan', calif: 9}, {nombre: 'Alex', calif: 10}, {nombre: 'Ignacio', calif: 8},{nombre: 'Felipe', calif: 8} ]">
+        <table border="1">
+            <tr>
+                <th>Nombre del estudiante</th>
+                <th>Calificacion</th>
+            </tr>
+            <tr ng-repeat="x in resultados | orderBy: '-calif' ">
+                <td ng-bind="x.nombre"></td>
+                <td ng-bind="x.calif"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

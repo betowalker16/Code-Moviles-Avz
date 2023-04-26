@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <title>Angular JS</title>
+</head>
+<body ng-app="">
+    <h3> Evento Click </h3>
+    
+    <div ng-init="incremento = 1">
+        <button ng-click="incremento = incremento + 1">Presioname</button>
+        <br>
+        <p ng-bind="incremento"></p>
+    </div>
+</body>
+</html>
