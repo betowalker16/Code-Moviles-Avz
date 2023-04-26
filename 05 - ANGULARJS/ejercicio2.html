@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
-    <title>Ejercicio1</title>
+    <title>Document</title>
 </head>
-<body>
-    <div ng-app="">
-        {{ 2 + 2 }}
-    </div>
-    <div>
-        {{ 2 + 2 }}
-    </div>
+<body ng-app="">
+    <h3>Primeros pasos en Angular</h3>
+    <input type="text" id="texto" ng-model="tuNombre" placeholder="Escribe tu nombre">
+    <br>
+    Hola {{ tuNombre }}, esto es angular
 </body>
 </html>
