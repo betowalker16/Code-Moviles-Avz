@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="js/ejercicio10.js"></script>
     <title>Angular JS</title>
 </head>
-<body ng-app="">
-    <h3> Evento Click </h3>
-    
-    <div ng-init="incremento = 1">
-        <button ng-click="incremento = incremento + 1">Presioname</button>
+<body>
+    <h3> controladores </h3>
+
+    <div ng-app="calculo" ng-controller="myController">
+        primer numero: <input type="number" ng-model="primero">
+        segundo numero: <input type="number" ng-model="segundo">
         <br>
-        <p ng-bind="incremento"></p>
+        suma <p> {{primero + segundo}} </p>
     </div>
 </body>
 </html>
