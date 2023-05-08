@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 //Rutas
 import { appRouting } from './app.routes';
 
+//Servicios
+import {heroesService} from './services/heroes.service'
+
 //Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
@@ -23,7 +26,9 @@ import { AboutComponent } from './components/about/about.component';
     BrowserModule,
     appRouting
   ],
-  providers: [],
+  providers: [
+    heroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
