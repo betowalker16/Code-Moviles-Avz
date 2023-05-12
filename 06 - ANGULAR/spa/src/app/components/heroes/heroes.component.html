@@ -1,16 +1,19 @@
 <h1>Heroes</h1>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
+    <div class="col" *ngFor="let heroe of heroes; let i = index" >
         <div class="card h-100">
-            <img src="assets/img/spiderman.png" class="card-img-top" alt="...">
+            <img src="{{ heroe.img }}" class="card-img-top" alt="{{heroe.nombre}}">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <h5 class="card-title">{{heroe.nombre}}</h5>
+                <p class="card-text">{{heroe.bio}}</p>
+                <button type="button" class="btn btn-danger" (click)="muestraHeroe(i)">Mas informacion...</button>
             </div>
             <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Ultima Aparicion: <b>{{heroe.aparicion}}</b></small><br>
+                <small class="text-body-secondary">Pertenece a: <b>{{heroe.casa}}</b> </small>
             </div>
         </div>
     </div>
+
 </div>

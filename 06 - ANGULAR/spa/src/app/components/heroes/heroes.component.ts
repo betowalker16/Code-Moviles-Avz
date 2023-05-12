@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { heroesService } from 'src/app/services/heroes.service';
+import { Component } from '@angular/core'
+import { heroesService } from 'src/app/services/heroes.service'
 
 @Component({
   selector: 'app-heroes',
@@ -16,5 +16,9 @@ export class HeroesComponent {
   ngOnInit() {
     this.heroes = this.HeroesService.getHeroes()
     console.log(this.heroes);
+  }
+
+  muestraHeroe(id: number) {
+    
   }
 }
