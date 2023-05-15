@@ -1,1 +1,17 @@
-<p>heroe works!</p>
+<h2>{{heroe.nombre | uppercase}}</h2> <span><p>{{heroe.aparicion | date}}</p></span>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{heroe.img}}" alt="{{heroe.nombre}}" class="img-fluid">
+
+        <a routerLink="/heroes" class="btn btn-outline-danger btn-block">Volver</a>
+    </div>
+
+    <div class="col-md-8">
+        <h4>{{heroe.nombre}}</h4>
+        <p>{{heroe.bio}}</p>
+
+        <h2 *ngIf="heroe.casa == 'Marvel' ">MARVEL</h2>
+        <h2 *ngIf="heroe.casa == 'DC' ">DC</h2>
+    </div>
+</div>
